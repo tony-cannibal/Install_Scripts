@@ -22,7 +22,8 @@ pacman -Sy --noconfirm grub efibootmgr networkmanager mtools dosfstools xdg-user
   gvfs gvfs-mtp os-prober terminus-font xorg xorg-xinit bspwm sxhkd lightdm \
   lightdm-gtk-greeter lightdm-gtk-greeter-settings pcmanfm neovim python-neovim \
   wget curl git unzip tar gzip npm lxsession udisks2 udiskie feh xsel exa bat \
-  ueberzug numlockx ark p7zip unrar unarchiver lzop lrzip file-roller
+  ueberzug numlockx ark p7zip unrar unarchiver lzop lrzip file-roller \
+  libx11 libxft libxinerama freetype2 fontconfig
 
 # Grub
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
