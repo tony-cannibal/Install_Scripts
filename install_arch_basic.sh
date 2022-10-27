@@ -26,7 +26,7 @@ pacman -Sy --noconfirm grub efibootmgr networkmanager mtools dosfstools xdg-user
   wget curl git unzip tar gzip npm lxsession udisks2 udiskie feh xsel exa bat \
   ueberzug numlockx ark p7zip unrar unarchiver lzop lrzip file-roller libx11 \
   libxft libxinerama freetype2 fontconfig arc-gtk-theme papirus-icon-theme polybar \
-  rxvt-unicode
+  rxvt-unicode rofi
 
 # Grub
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
