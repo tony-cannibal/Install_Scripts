@@ -49,6 +49,8 @@ echo "lxpolkit &" >> /home/luis/.config/bspwm/bspwmrc
 echo "udiskie &" >> home/luis/.config/bspwm/bspwmrc
 
 cp /usr/share/doc/bspwm/example/sxhkdrc /home/luis/.config/sxhkd/
+sed -i 's/urxvt/alacritty/' /home/luis/.config/sxhkd/sxhkdrc
+sed -i 's/dmenu_run/rofi -modi drun -show drun/' /home/luis/.config/sxhkd/sxhkdrc
 
 git clone --depth 1 https://github.com/tony-cannibal/nvim.git /home/luis/.config/
 git clone --depth 1 https://github.com/tony-cannibal/suckless.git /home/luis/.config/
