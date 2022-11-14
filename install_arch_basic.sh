@@ -20,7 +20,7 @@ echo "127.0.1.1        myhostname.localdomain  myhostname" >> /etc/hosts
 echo root:260593 | chpasswd
 
 pacman -Sy --noconfirm grub efibootmgr networkmanager mtools dosfstools xdg-user-dirs \
-  xdg-utils base-devel nfs-utils inetutils dnsutils alsa-utils pulseaudio alacritty \
+  xdg-utils base-devel nfs-utils inetutils dnsutils pulseaudio pamixer alacritty \
   gvfs gvfs-mtp os-prober terminus-font xorg xorg-xinit bspwm sxhkd lightdm \
   lightdm-gtk-greeter lightdm-gtk-greeter-settings pcmanfm neovim python-neovim \
   wget curl git unzip tar gzip npm lxsession udisks2 udiskie feh xsel exa bat \
@@ -39,21 +39,4 @@ systemctl enable NetworkManager
 useradd luis -mG wheel
 echo luis:310013 | chpasswd
 
-# Basic Config
-mkdir -p /home/luis/.config/{bspwm,sxhkd,alacritty}
-
-cp /usr/share/doc/bspwm/example/bspwmrc /home/luis/.config/bspwm/
-chmod +x /home/luis/.config/bspwm/bspwm/bspwmrc
-echo "setxkbmap -option caps:swapescape" >> /home/luis/.config/bspwm/bspwmrc
-echo "lxpolkit &" >> /home/luis/.config/bspwm/bspwmrc
-echo "udiskie &" >> home/luis/.config/bspwm/bspwmrc
-
-cp /usr/share/doc/bspwm/example/sxhkdrc /home/luis/.config/sxhkd/
-sed -i 's/urxvt/alacritty/' /home/luis/.config/sxhkd/sxhkdrc
-sed -i 's/dmenu_run/rofi -modi drun -show drun/' /home/luis/.config/sxhkd/sxhkdrc
-
-git clone --depth 1 https://github.com/tony-cannibal/nvim.git /home/luis/.config/
-git clone --depth 1 https://github.com/tony-cannibal/suckless.git /home/luis/.config/
-
-chown -R luis:luis /home/luis
 
