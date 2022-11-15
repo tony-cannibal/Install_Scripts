@@ -15,7 +15,7 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf\
 echo "cannibal" >> /etc/hostname
 echo "127.0.0.1        localhost" >> /etc/hosts
 echo "::1              localhost" >> /etc/hosts
-echo "127.0.1.1        myhostname.localdomain  myhostname" >> /etc/hosts
+echo "127.0.1.1        cannibal.localdomain  cannibal" >> /etc/hosts
 
 echo root:260593 | chpasswd
 
