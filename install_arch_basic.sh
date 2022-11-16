@@ -23,7 +23,7 @@ pacman -Sy --noconfirm grub efibootmgr networkmanager mtools dosfstools xdg-user
   xdg-utils base-devel nfs-utils inetutils dnsutils pulseaudio pamixer alacritty \
   gvfs gvfs-mtp os-prober terminus-font xorg xorg-xinit bspwm sxhkd lightdm \
   lightdm-gtk-greeter lightdm-gtk-greeter-settings pcmanfm neovim python-neovim \
-  wget curl git unzip tar gzip npm lxsession udisks2 udiskie feh xsel exa bat \
+  wget curl unzip tar gzip npm lxsession udisks2 udiskie feh xsel exa bat \
   ueberzug numlockx ark p7zip unrar unarchiver lzop lrzip file-roller libx11 \
   libxft libxinerama freetype2 fontconfig arc-gtk-theme papirus-icon-theme polybar \
   rxvt-unicode rofi ntfs-3g lf firefox
