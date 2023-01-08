@@ -30,7 +30,7 @@ pacman -Sy --noconfirm grub efibootmgr networkmanager mtools dosfstools xdg-user
 
 # Grub
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
-sed -i 's/GRUB_GFXMODE=.*/GRUB_GFXMODE=1440x900x32,auto/' /etc/default/grub
+sed -i 's/GRUB_GFXMODE=.*/GRUB_GFXMODE=1366x768x32,auto/' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager 
